@@ -28,6 +28,10 @@ frontEnders.forEach((fe) => {
 });
 frontEnders.forEach((fe) => {
     console.log(fe.childNodes[3]); // div.block__content with name in h2 tags, and role in p tags
+    let name = fe.getElementsByTagName('h2');
+    console.log('name: ', name[0].innerText);
+    let role = fe.getElementsByTagName('p');
+    console.log('role: ', role[0].innerText);
 });
 
 
