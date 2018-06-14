@@ -41,7 +41,15 @@ getAllFrontEnders();
 
 
 // paste this script in the console to register the element
-var frontEndTeam = '<h1>Become One of Our Front End Engineers</h1><p><img src="https://www.jetbalagtas.com/wp-content/uploads/2018/06/front-enders.png"/></p>';
+var frontEndTeam = '<h1>Become One of Our Front End Engineers</h1><p></p>\
+                    <div class="home__client-success">\
+                      <div class="slider slider--client-success">\
+                        <div class="client-success__slide">\
+                          <img src="https://www.jetbalagtas.com/wp-content/uploads/2018/06/fes-1.png"/>\
+                        </div>\
+                      </div>\
+                    </div>\
+    ';
 var FrontEngs = Object.create(HTMLElement.prototype);
 
 FrontEngs.createdCallback = function() {
